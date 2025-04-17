@@ -46,8 +46,25 @@ nav a:hover {
   }
 }
 
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 main {
   padding: 2rem;
+  flex: 1;
+}
+
+footer {
+  background-color: #f4f4f4;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+  border-top: 1px solid #ccc;
 }
 
 .content {
@@ -61,7 +78,23 @@ main {
   text-align: center;
 }
 
-/* Restore spacing for headings */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-family: sans-serif;
+}
+
+th,
+td {
+  padding: 0.5rem 0.25rem 0.5rem;
+  vertical-align: top;
+  text-align: left;
+}
+caption {
+  text-align: left;
+}
+
 h1,
 h2,
 h3 {
@@ -69,12 +102,10 @@ h3 {
   margin-top: 2rem;
 }
 
-/* Restore spacing for paragraphs */
 p {
   margin-bottom: 1rem;
 }
 
-/* Restore list styling */
 ul {
   margin: 1rem 0 1rem 2rem;
   list-style: disc;

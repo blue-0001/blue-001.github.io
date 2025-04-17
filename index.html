@@ -10,16 +10,17 @@
     <header class="site-header">
       <nav>
         <a href="/blue-001.github.io/index.html">Resume</a>
-        <a href="/blue-001.github.io/cover-letter.html">JavaScript</a>
+        <a href="/blue-001.github.io/cover-letter.html">Cover Letter</a>
         <a href="/blue-001.github.io/goals-document.html">Goals Document</a>
       </nav>
     </header>
     <main>
       <div class="content">
         <div class="resume-tile-bar">
+          <em><div id="date-container"></div></em>
           <h1>Jane Doe Resume</h1>
           <p>
-            Chicago | email@email.com |
+            Chicago | email@example.com |
             <a href="https://github.com/">GitHub</a> |
             <a href="https://www.linkedin.com/">Linkedin</a>
           </p>
@@ -31,77 +32,127 @@
             Certified and detail-oriented Penetration Tester with 5 years of
             experience identifying vulnerabilities, conducting security
             assessments, and simulating real-world cyberattacks to strengthen
-            organizational security. Proficient in manual and automated testing,
-            ethical hacking methodologies, and delivering comprehensive reports.
-            Adept at working with cross-functional teams to implement effective
+            organizational security. <br /><br />
+            Proficient in manual and automated testing, ethical hacking
+            methodologies, and delivering comprehensive reports. Adept at
+            working with cross-functional teams to implement effective
             mitigation strategies.
           </p>
+          <article>
+            <table>
+              <caption>
+                <h2>Skills</h2>
+                <hr />
+              </caption>
+              <thead>
+                <tr>
+                  <th>Penetration Testing</th>
+                  <th>Tools</th>
+                  <th>Programing Languages</th>
+                  <th>Soft Skills</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>OWASP Top 10</td>
+                  <td>Metasploit</td>
+                  <td>Bash</td>
+                  <td>Clear Communication</td>
+                </tr>
+                <tr>
+                  <td>Vulnerability Scanning</td>
+                  <td>Nmap</td>
+                  <td>Python</td>
+                  <td>Report Writing</td>
+                </tr>
+                <tr>
+                  <td>Application Penetration Testing</td>
+                  <td>BurpSuite</td>
+                  <td>Go</td>
+                  <td>Positive Outlook</td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+          <article>
+            <h2>Certifications</h2>
+            <hr />
+            <ul>
+              <li>Offensive Security Certified Professional (OSCP)</li>
+              <li>eLearnSecurity Junior Penetration Tester (eJPT)</li>
+              <li>CompTIA Security+</li>
+            </ul>
+          </article>
+          <article>
+            <h2>Professional Experience</h2>
+            <hr />
+            <h3>Penetration Tester</h3>
+            <p>
+              <strong>Expression, Inc.</strong>
+              <span style="float: right">May 2020 - Present</span>
+            </p>
+            <ul>
+              <li>
+                Conducted black-box, white-box, and gray-box penetration tests
+                on
+                <em>networks, applications, and APIs</em>
+              </li>
+              <li>
+                Discovered and documented critical vulnerabilities, including
+                <em>SQLi, XSS, and privilege escalation flaws</em>
+              </li>
+              <li>
+                Collaborated with development and security teams to suggest and
+                implement remediation steps
+              </li>
+              <li>
+                Created post-engagement reports with technical findings and
+                executive summaries
+              </li>
+            </ul>
+            <h3>Security Analyst Intern</h3>
+            <p>
+              <strong>Tommorrow, Inc.</strong>
+              <span style="float: right">Jan 2018 - May 2020</span>
+            </p>
+            <ul>
+              <li>
+                Supported red team exercises by gathering intelligence and
+                simulating attacks
+              </li>
+              <li>
+                Monitored network traffic for anomalies and signs of compromise
+              </li>
+              <li>
+                <em>Automated repetitive security tasks</em> using Python and
+                Bash scripts
+              </li>
+            </ul>
+          </article>
+          <article>
+            <h2>Education</h2>
+            <hr />
+            <p>
+              <strong>BS in Software Engineering, WGU</strong>
+              <span style="float: right">Expected 2027</span>
+            </p>
+          </article>
         </section>
-        <article>
-          <h2>Certifications</h2>
-          <hr />
-          <ul>
-            <li>Offensive Security Certified Professional (OSCP)</li>
-            <li>eLearnSecurity Junior Penetration Tester (eJPT)</li>
-            <li>CompTIA Security+</li>
-          </ul>
-        </article>
-        <article>
-          <h2>Professional Experience</h2>
-          <hr />
-          <h3>Penetration Tester</h3>
-          <p>
-            <strong>Expression, Inc.</strong>
-            <span style="float: right">May 2020 - Present</span>
-          </p>
-          <ul>
-            <li>
-              Conducted black-box, white-box, and gray-box penetration tests on
-              networks, applications, and APIs
-            </li>
-            <li>
-              Discovered and documented critical vulnerabilities, including
-              SQLi, XSS, and privilege escalation flaws
-            </li>
-            <li>
-              Collaborated with development and security teams to suggest and
-              implement remediation steps
-            </li>
-            <li>
-              Created post-engagement reports with technical findings and
-              executive summaries
-            </li>
-          </ul>
-          <h3>Security Analyst Intern</h3>
-          <p>
-            <strong>Tommorrow, Inc.</strong>
-            <span style="float: right">Jan 2018 - May 2020</span>
-          </p>
-          <ul>
-            <li>
-              Supported red team exercises by gathering intelligence and
-              simulating attacks
-            </li>
-            <li>
-              Monitored network traffic for anomalies and signs of compromise
-            </li>
-            <li>
-              Automated repetitive security tasks using Python and Bash scripts
-            </li>
-          </ul>
-        </article>
-        <article>
-          <h2>Education</h2>
-          <hr />
-          <p>
-            <strong>BS in Software Engineering, WGU</strong>
-            <span style="float: right">Expected 2027</span>
-          </p>
-        </article>
       </div>
     </main>
     <footer>
-      <p>This is a footer</p>
+      <p>Jane Doe &copy; 2025</p>
     </footer>
+    <script>
+      // Get the current date
+      const today = new Date();
+      // Format it as a readable string
+      const formattedDate = today.toDateString();
+      // Log the date to the console
+      console.log("Today's date is:", formattedDate);
+      // Insert it into the div
+      document.getElementById("date-container").textContent =
+        "Today's date is: " + formattedDate;
+    </script>
   </body>
 </html>
